@@ -13,7 +13,7 @@ export const StyledTableRow = styled.td`
 `;
 
 export const StyledText = styled.p`
-padding-top:5px;
-margin:0;
-font-size: 2vmin;
+  padding-top: 5px;
+  margin: 0;
+  font-size: 2vmin;
 `;

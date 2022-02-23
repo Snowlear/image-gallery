@@ -15,28 +15,6 @@ export default function Button({ children, onClick, className }: ButtonProps) {
   );
 }
 
-interface StyledButtonProps {
-  type?: "positive" | "negative" | "basic";
-}
-
-export const ColouredStyledButton = styled(Button)<StyledButtonProps>`
-  display: flex;
-  justify-content: center;
-  border-radius: 30px;
-  font-size: 20px;
-  width: 150px;
-  ${(props) =>
-    props.type === "positive" &&
-    `
-    border: 1px solid #0fff009e;
-    background-color: #28ff002b;`}
-  ${(props) =>
-    props.type === "negative" &&
-    `
-    border: 1px solid #ff00002b;
-    background-color: #ff00002b;`}
-`;
-
 interface ButtonProps {
   children?: any;
   onClick: Function;

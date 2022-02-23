@@ -1,9 +1,9 @@
-import React from "react";
+import "@testing-library/jest-dom";
 import { render, screen } from "@testing-library/react";
 import Index from "../../../components/pages";
 
-test("renders image text", () => {
+test("renders Image Gallery title", () => {
   render(<Index />);
-  const linkElement = screen.getByText(/image/i);
+  const linkElement = screen.getByText(/Image Gallery/i);
   expect(linkElement).toBeInTheDocument();
 });
