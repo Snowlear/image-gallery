@@ -1,12 +1,8 @@
 import styled, { CSSProperties } from "styled-components";
 
 const StyledImage = styled.img<ImageBoxProps>`
-  height: 100%;
-  width: auto;
-  ${(props) =>
-    props.isInitial &&
-    `
-    width: 100%`}
+max-width:100%;
+max-height:100%;
 `;
 
 export default function ImageBox({
